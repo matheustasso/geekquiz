@@ -1,0 +1,58 @@
+[
+ {
+   "pergunta": "Qual o nome do personagem do jogo Zelda?",
+   "op1": "Ken",
+   "op2": "Mr. Bizon",
+   "op3": "Link",
+   "opc": 3
+ },
+ {
+   "pergunta": "Qual o nome do protagonista de GTA Vice City?",
+   "op1": "Tommy",
+   "op2": "Ted",
+   "op3": "John",
+   "opc": 1
+ },
+ {
+   "pergunta": "De qual jogo pertence a personagem Ashe?",
+   "op1": "Dota",
+   "op2": "Fortnite",
+   "op3": "League of Legends",
+   "opc": 3
+ },
+ {
+   "pergunta": "O que significa a sigla CS - GO?",
+   "op1": "Counter Strike Global Ofensive",
+   "op2": "Counter Strike Gun Over",
+   "op3": "Counter Strike Grandade Optical",
+   "opc": 1
+ },
+ {
+   "pergunta": "De qual jogo pertence o personagem Kratos?",
+   "op1": "God of War",
+   "op2": "Donkey Kong",
+   "op3": "Prince of Persia",
+   "opc": 1
+ },
+ {
+   "pergunta": "Ezio é o nome do personagem de qual franquia? ",
+   "op1": "Gear of War",
+   "op2": "Battlefield",
+   "op3": "Assassin's Creed",
+   "opc": 3
+ },
+ {
+   "pergunta": "Quem é o irmão do Mário na saga dos jogos?",
+   "op1": "Bowser",
+   "op2": "Yoshi",
+   "op3": "Luigi",
+   "opc": 3
+ },
+ {
+   "pergunta": "Qual o nome do developer do quiz?",
+   "op1": "Mateus Tarso",
+   "op2": "Mateus Tassio",
+   "op3": "Matheus Tasso",
+   "opc": 3
+ }
+]

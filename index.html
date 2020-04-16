@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>GeekQuiz</title>
+    <link rel="icon" type="imagem/png" href="http://icons.iconarchive.com/icons/starvingartist/antiseptic-videogame/16/nintendo-super-nes-icon.png" />
+    <link 
+    href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" 
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+      </style>
+      <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="header">
+        <h1>GEEK QUIZ</h1>
+        <p>The Game</p>
+        <p>Respostas: {{indiceResposta}}</p>
+        <div class="vidas icon-list">
+          <div class="vazios">
+            <i class="nes-icon is-normal heart is-empty"></i>
+            <i class="nes-icon is-normal heart is-empty"></i>
+            <i class="nes-icon is-normal heart is-empty"></i>
+            <i class="nes-icon is-normal heart is-empty"></i>
+          </div>
+          <div class="cheios">
+            <i v-for="vida in vidas" class="nes-icon is-normal heart"></i>
+          </div>
+        </div>
+      </div>
+      <div v-show="vidas > 0" class="quiz">
+          <div class="nes-container is-dark with-title">
+            <p class="title">{{pergunta.pergunta}}</p>
+            <div class="perguntas">
+              <div style="background-color:#212529;">
+                <label>
+                  <input 
+                  value="1" 
+                  v-model="indiceResposta" 
+                  type="radio" 
+                  class="nes-radio is-dark" 
+                  name="answer-dark" 
+                  checked 
+                  />
+                  <span>{{pergunta.op1}}</span>
+                </label>
+        
+                <label>
+                  <input 
+                  value="2" 
+                  v-model="indiceResposta"
+                  type="radio" 
+                  class="nes-radio is-dark" 
+                  name="answer-dark" 
+                  />
+                  <span>{{pergunta.op2}}</span>
+                </label>
+
+              <label>
+                <input 
+                value="3" 
+                v-model="indiceResposta"
+                type="radio" 
+                class="nes-radio is-dark" 
+                name="answer-dark" 
+                />
+                <span>{{pergunta.op3}}</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <button 
+          @click="enviarResposta()" 
+          type="button" 
+          class="nes-btn is-success"
+          v-show="indiceResposta > 0"> 
+          > 
+        </button>
+        </div>
+      </div>
+      <!-- button game over -->
+      <div v-show="vidas === 0" class="game-over">
+        <h1 class="nes-text is-error">VOCÊ PERDEU!</h1>
+        <button v-on:click="jogarNovamente()" class="nes-btn is-primary">JOGAR NOVAMENTE</button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

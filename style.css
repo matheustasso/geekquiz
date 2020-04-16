@@ -1,0 +1,55 @@
+body{
+  background-color: #212529ea;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+}
+.quiz {
+  padding: 10px;
+}
+.perguntas {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.menu {
+  flex: 1;
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.header {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game-over {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vidas {
+  width: 100%;
+  position: relative;
+}
+
+.vazios {
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 50px;
+  display: flex;
+}
+
+.cheios {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 250px;
+  height: 50px;
+}

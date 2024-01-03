@@ -1,9 +1,12 @@
 body{
-  background-color: #212529ea;
+  background-color: #3a4147ea;
 }
 #app {
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
+  width: 100%;
+  max-width: 1240px;
 }
 .quiz {
   padding: 10px;
@@ -25,6 +28,7 @@ body{
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: 4rem;
 }
 
 .game-over {
@@ -53,3 +57,4 @@ body{
   width: 250px;
   height: 50px;
 }
+
